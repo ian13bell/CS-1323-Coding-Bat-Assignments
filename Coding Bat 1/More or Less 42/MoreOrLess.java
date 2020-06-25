@@ -16,7 +16,23 @@ public class MoreOrLess {
 
 	public static boolean moreOrLess42(int x)
 	{
-		// Your code goes here
-
+		// Your code goes here;
+		int result;
+		int moreThan42;
+		int lessThan42;
+		moreThan42 = (x - 1) % 42;
+		lessThan42 = (x + 1) % 42;
+		result = x % 42;
+		if (result == 0) {
+			return true;
+		}
+		if (lessThan42 == 0) {
+			return true;
+		}
+		if (moreThan42 == 0) {
+			return true;
+		}
+		else {
+			return false;
 	}
 }
